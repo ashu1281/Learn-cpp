@@ -1,0 +1,2 @@
+﻿  q3-lamp.cpp
+LINK : fatal error LNK1104: cannot open file 'day11dll.lib'

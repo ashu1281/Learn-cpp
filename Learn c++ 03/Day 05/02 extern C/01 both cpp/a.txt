@@ -1,0 +1,50 @@
+Microsoft (R) COFF/PE Dumper Version 14.32.31329.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file Source01a.obj
+
+File Type: COFF OBJECT
+
+COFF SYMBOL TABLE
+000 01057A61 ABS    notype       Static       | @comp.id
+001 80010191 ABS    notype       Static       | @feat.00
+002 00000002 ABS    notype       Static       | @vol.md
+003 00000000 SECT1  notype       Static       | .drectve
+    Section length   62, #relocs    0, #linenums    0, checksum        0
+005 00000000 SECT2  notype       Static       | .debug$S
+    Section length   98, #relocs    0, #linenums    0, checksum        0
+007 00000000 SECT3  notype       Static       | .rdata
+    Section length    4, #relocs    0, #linenums    0, checksum 22DDD47A
+009 00000000 SECT3  notype       Static       | $SG5655
+00A 00000000 SECT4  notype       Static       | .text$mn
+    Section length   45, #relocs    3, #linenums    0, checksum 6161712A
+00C 00000000 SECT5  notype       Static       | .text$mn
+    Section length    A, #relocs    1, #linenums    0, checksum 71A05264, selection    2 (pick any)
+00E 00000000 SECT6  notype       Static       | .text$mn
+    Section length   29, #relocs    2, #linenums    0, checksum 2B25B17F, selection    2 (pick any)
+010 00000000 SECT7  notype       Static       | .text$mn
+    Section length   3A, #relocs    2, #linenums    0, checksum CAE6D625, selection    2 (pick any)
+012 00000000 SECT5  notype ()    External     | ___local_stdio_printf_options
+013 00000000 UNDEF  notype ()    External     | ___acrt_iob_func
+014 00000000 UNDEF  notype ()    External     | ___stdio_common_vfprintf
+015 00000000 SECT6  notype ()    External     | __vfprintf_l
+016 00000000 SECT7  notype ()    External     | _printf
+017 00000000 UNDEF  notype ()    External     | ?add@@YAHHH@Z (int __cdecl add(int,int))
+018 00000000 SECT4  notype ()    External     | _main
+019 00000000 SECT8  notype       Static       | .bss
+    Section length    8, #relocs    0, #linenums    0, checksum        0, selection    2 (pick any)
+01B 00000000 SECT8  notype       External     | ?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA (unsigned __int64 `__local_stdio_printf_options'::`2'::_OptionsStorage)
+01C 00000000 SECT9  notype       Static       | .chks64
+    Section length   48, #relocs    0, #linenums    0, checksum        0
+
+String Table Size = 0xA1 bytes
+
+  Summary
+
+           8 .bss
+          48 .chks64
+          98 .debug$S
+          62 .drectve
+           4 .rdata
+          B2 .text$mn

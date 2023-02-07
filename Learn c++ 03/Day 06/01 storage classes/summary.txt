@@ -1,0 +1,10 @@
+									Scope				Lifetime				Location
+
+non-static local variable		block-wide				block-wide				stack frame
+
+static local variable			block-wide				application-wide		global data space
+
+non-static global variable		application-wide		application-wide		global data space
+
+static global variable			translation unit wide	application-wide		global data space
+								(only that file wide)
