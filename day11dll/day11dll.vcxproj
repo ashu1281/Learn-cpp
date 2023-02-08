@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{03ae60c2-e11c-4ace-9733-6b8ed2f89ced}</ProjectGuid>
+    <ProjectGuid>{2bfcaea1-2c85-42c9-bfe1-1fb5858bb122}</ProjectGuid>
     <RootNamespace>day11dll</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -130,14 +130,6 @@
       <EnableUAC>false</EnableUAC>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\day5dll\day 11\q4\Rectangle.h" />
-    <ClInclude Include="lamp.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\day5dll\day 11\q4\rectangle.cpp" />
-    <ClCompile Include="lamp.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

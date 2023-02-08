@@ -1,4 +1,7 @@
-﻿  rectangle.cpp
-  lamp.cpp
+﻿  7-len.cpp
+D:\pratiti training\Learn c++\day11dll\7-len.cpp(2,5): warning C4273: 'len': inconsistent dll linkage
+D:\pratiti training\Learn c++\day11dll\b.h(12,12): message : see previous definition of 'len'
+  Source.cpp
   Generating Code...
+     Creating library D:\pratiti training\Learn c++\Debug\day11dll.lib and object D:\pratiti training\Learn c++\Debug\day11dll.exp
   day11dll.vcxproj -> D:\pratiti training\Learn c++\Debug\day11dll.dll

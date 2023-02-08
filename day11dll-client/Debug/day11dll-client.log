@@ -1,2 +1,2 @@
-﻿  q3-lamp.cpp
-LINK : fatal error LNK1104: cannot open file 'day11dll.lib'
+﻿  q7.cpp
+  day11dll-client.vcxproj -> D:\pratiti training\Learn c++\Debug\day11dll-client.exe
