@@ -15,7 +15,7 @@ private:
 
 class Derived : public Base {
 public:
-	Derived(int i, int j) : Base(i), m_j(j) {
+	Derived(int i, int j) : Base(i), m_j(j) { //direct m_i(i) is not accessible here.
 		cout << "From Derived Constructor" << endl;
 	}
 	~Derived() {
