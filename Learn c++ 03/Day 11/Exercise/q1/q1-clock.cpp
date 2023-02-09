@@ -10,6 +10,7 @@ int main() {
     wallClock.Time(timeString, SIZE);
     assert(strcmp(timeString, "00:00:00") == 0);
 
+
     for (int i = 0; i < 12345; i++)
         wallClock.Tick();
     wallClock.Time(timeString, SIZE);

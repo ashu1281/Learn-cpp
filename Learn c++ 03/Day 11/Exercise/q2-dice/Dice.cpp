@@ -3,14 +3,15 @@
 #include<cstdlib>
 
 Dice::Dice() {
-    int value = 0;
-}
-
-int Dice::GetFaceValue() {
-    assert(value >= 1 && value <= 6);
-    return value;
+    int m_faceValue = 0;
 }
 
 void Dice::Roll() {
-    value = ((rand() % 6) + 1);
+    m_faceValue = ((rand() % 6) + 1);
 }
+
+int Dice::GetFaceValue() const {
+    assert(m_faceValue >= 1 && m_faceValue <= 6);
+    return m_faceValue;
+}
+

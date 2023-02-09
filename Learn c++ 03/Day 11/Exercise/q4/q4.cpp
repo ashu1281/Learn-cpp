@@ -3,26 +3,53 @@
 #include "Rectangle.h"
 
 
-class Rectangle {
-private:
-    int a = 0, b = 0, c = 0, d = 0;
+class Point {
 public:
-    Rectangle(int a, int b, int c, int d) {
+    Point(int x, int y):m_x(x), m_y(y){}
+
+public:
+    int GetX() const {
+        return m_x;
+    }
+    int GetY() const {
+        return m_y;
+    }
+
+private:
+    int m_x;
+    int m_y;
+
+};
+
+class Rectangle {
+public:
+    Rectangle(int t, int l, int b, int r): m_top(t), m_left(l), m_bottom(b), m_right(r) {}
+
+public:
+    Point CenterPoint() const {
+        int x = (m_left+m_right) / 2;
+        int y = (m_top + m_bottom) / 2;
+        return Point(x,y);
+    }
+
+    Point TopLeft() const {
+  
+         return Point(m_left, m_top);
+    }
+
+    Rectangle Clone() const{
+        return Rectangle(m_top, m_left , m_bottom, m_right);
 
     }
 
-public:
-    CenterPoint()
-};
-
-class Point {
 private:
-    const int x;
-    const int y;
-
-public:
+    int m_top;
+    int m_left;
+    int m_bottom;
+    int m_right;
 
 };
+
 int main() {
     int top = 10;
     int left = 10;
@@ -39,8 +66,7 @@ int main() {
     // Following test case checks
     // - Rectangle's Clone member function.
     Rectangle u = r.Clone();
-    assert(u.TopLeft().GetX() == r.TopLeft().GetX() &&
-        u.TopLeft().GetY() == r.TopLeft().GetY());
+    assert(u.TopLeft().GetX() == r.TopLeft().GetX() && u.TopLeft().GetY() == r.TopLeft().GetY());
 
     // Following test case checks
     // - Rectangle's MoveToX and MoveToY member functions.

@@ -1,12 +1,5 @@
 #pragma once
 
-#ifdef B_EXPORTS
-#define EXPIMP _declspec(dllexport)
-
-#else
-#define EXPIMP _declspec(dllimport)
-#endif
-
 enum LampState {
     OffState,
     OnState,
@@ -19,7 +12,7 @@ private:
 public:
     Lamp();
 public:
-    LampState GetState();
+    LampState GetState() const;
 
 public:
     void SwitchOn();

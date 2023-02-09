@@ -5,7 +5,7 @@ Lamp::Lamp() {
     m_state = OffState;
 }
 
-LampState Lamp::GetState() {
+LampState Lamp::GetState() const{
     return m_state;
 }
 

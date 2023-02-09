@@ -1,30 +1,86 @@
 #include <assert.h>
 #include <string.h>
-#include "caesar_cipher.h"
+//#include "caesar_cipher.h"
 
 #define CAPACITY 32
 
-int const m_key;
+
 class CaesarCipher {
 public:
-    int static m_key;
+    static void Encrypt(char* plainText, char* cipherText, size_t size) {
+        for (int i = 0; plainText[i] != '\0'; i++) {
 
-    int GetKey() const {
+            char chg = plainText[i];
+                if (chg >= 'a' && chg <= 'z')
+                {
+                    chg = chg + m_key;
+                    if (chg > 'z')
+                    {
+                        chg = chg - 'z' + 'a' - 1;
+                    }
+                    cipherText[i] = chg;
+                }
+                else if (chg >= 'A' && chg <= 'Z')
+                {
+                    chg = chg + m_key;
+                    if (chg > 'Z')
+                    {
+                        chg = chg - 'Z' + 'A' - 1;
+                    }
+                    cipherText[i] = chg;
+                }
+                if (chg == ' ') {
+                    cipherText[i] = chg;
+                }
+        }
+    } 
+
+    static void Decrypt(char* cipherText, char* plainText, size_t size) {
+        memset(plainText, '\0', size);
         
+        for (int i = 0; cipherText[i] != '\0'; i++) {
+
+            char chg = cipherText[i];
+            if (chg >= 'a' && chg <= 'z')
+            {
+                chg = chg - m_key;
+                if (chg < 'a')
+                {
+                    chg = chg + 'a' - 'z' + 1;
+                }
+                plainText[i] = chg;
+            }
+            else if (chg >= 'A' && chg <= 'Z')
+            {
+                chg = chg - m_key;
+                if (chg > 'Z')
+                {
+                    chg = chg + 'Z' - 'A' + 1;
+                }
+                plainText[i] = chg;
+            }
+            if (chg == ' ') {
+                plainText[i] = chg;
+            }
+        }
+    }
+
+
+    static int GetKey(){
+      
         return m_key;
     }
 
-    void SetKey(int n) {
+    static void SetKey(int n) {
         assert(n >= 0);
         m_key = n;
     }
-    char Encrypt(char* plainText, char* cipherText, CAPACITY) {
-        
-    }
-
+     
+private:
+    static int m_key;
 
 };
-
+int CaesarCipher::m_key;
 
 int main() {
 
@@ -37,6 +93,7 @@ int main() {
     // - Encrypt method of  CaesarCipher class
     char plainText[CAPACITY] = "ATTACK AT DAWN";
     char cipherText[CAPACITY] = { 0 };
+    /*size_t size = CAPACITY;*/
     CaesarCipher::Encrypt(plainText, cipherText, CAPACITY);
     assert(strcmp(cipherText, "DWWDFN DW GDZQ") == 0);
 
@@ -44,7 +101,7 @@ int main() {
     // - Decrypt method of  CaesarCipher class
     strcpy_s(cipherText, CAPACITY, "WKLV LV IXQ");
     CaesarCipher::Decrypt(cipherText, plainText, CAPACITY);
-    assert(strcmp(cipherText, "THIS IS FUN") == 0);
+    assert(strcmp(plainText, "THIS IS FUN") == 0);
 }
 
 

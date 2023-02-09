@@ -1,12 +1,16 @@
 #pragma once
 
 class Dice{
-private:
-	int value;
+
 public:
 	Dice();
-	int GetFaceValue();
+	
+public:
 	void Roll();
 
+	int GetFaceValue()const;
+	
+private:
+	int m_faceValue;
 
 };
