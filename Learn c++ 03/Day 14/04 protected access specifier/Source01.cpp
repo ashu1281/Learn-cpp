@@ -33,7 +33,8 @@ private:
 
 int main() {
 	Derived d(5, 10);
-	// d.m_i = 1; // protected member is not accessible to non-member
+	d.m_i = 1; // protected member is not accessible to non-member
+	d.m_j = 5;// private member is not also accessible to non-member
 	d.Print();
 }
 
@@ -49,4 +50,9 @@ int main() {
 	We avoid declaring data members protected, as that would unable
 	us to make changes to the data members in future. We may declare 
 	member functions protected.
+
+
+-	class conatains data members + function members
+-	data members NEVER gives public/protected access.
+
 */
