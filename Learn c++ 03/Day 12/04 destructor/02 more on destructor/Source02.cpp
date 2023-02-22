@@ -15,4 +15,6 @@ int main() {
 /*
 - Parameterized destructor is not allowed hence
   destructor overloading is not possible.
+
+  -but it is possible in constructor bz parameterized constructor is allowed.
 */

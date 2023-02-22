@@ -9,5 +9,5 @@ int main() {
 
 /*
 - Upcasting is converting derived class pointer or reference to base class pointer or reference resp.
-- Upcasting happens implicitly.
+- Upcasting happens "implicitly".
 */

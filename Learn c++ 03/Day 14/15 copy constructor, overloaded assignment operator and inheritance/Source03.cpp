@@ -29,7 +29,7 @@ public:
 		cout << "From Derived Default Constructor" << endl;
 	}
 
-	Derived(const Derived& obj) : Base(obj) {
+	Derived(const Derived& obj) : Base(obj)/*this is must*/ {
 		cout << "From Derived Copy Constructor" << endl;
 	}
 
@@ -39,7 +39,7 @@ public:
 
 	Derived& operator=(const Derived& obj) {
 		if (this != &obj) {
-			Base::operator=(obj);
+			Base::operator=(obj);// this is must
 			// derived memberwise assignment
 		}
 		return *this;
@@ -47,9 +47,9 @@ public:
 };
 
 int main() {
-	Derived u; // invokes compiler supplied default constructor of Derived class
-	Derived v = u; // invokes compiler supplied copy constructor of Derived class
-	v = u; // invokes compiler supplied copy assignment operator of Derived class
+	Derived u; // invokes Derived default constructor of Derived class
+	Derived v = u; // invokes Derived copy constructor of Derived class
+	v = u; // invokes Derived copy assignment operator of Derived class
 }
 
 

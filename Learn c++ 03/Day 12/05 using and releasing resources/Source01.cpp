@@ -9,7 +9,7 @@ int main() {
 		a.Set(5);
 		assert(a.Get() == 5);
 	}
-	_CrtDumpMemoryLeaks();
+	_CrtDumpMemoryLeaks(); //always put it outside the main scope bz distructor is called end of the scope so next this function not getting error.
 }
 
 /*
@@ -18,7 +18,7 @@ int main() {
 - One possible case could be at the begining of its lifetime i.e. in the constructor.
 - Note it's not compulsory for an object to acquire resources in the constructor.
 - It can acquire in any other function as well.
-- Its obligation on object to release acquired resources.
+- It is an obligation on object to release acquired resources.
 - Again it can be performed at any point of time during lifetime of an object.
 - It must however be completed before object is released.
 - If not done the resource would get leaked.

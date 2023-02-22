@@ -15,19 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Day 11\14 initialization list\Source01.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Day 11\14 initialization list\Source02.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Day 11\14 initialization list\Source03.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Day 11\14 initialization list\Source04.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Day 11\14 initialization list\Source05.cpp">
+    <ClCompile Include="Day 16\04 stream io\Source01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -27,7 +27,7 @@ public:
 	}
 public:
 	void Print() {
-		Base::Print();
+		Base::Print(); //here m_i is private data member of base class so it is directly not accessible.
 		cout << m_j << endl;
 	}
 private:

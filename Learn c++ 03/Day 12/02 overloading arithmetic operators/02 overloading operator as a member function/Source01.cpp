@@ -2,7 +2,7 @@
 #include "Integer.h"
 
 int main() {
-	Integer u(5), v(10), w;
+	Integer u(5),  w;
 	w = u + v; // w = u + v; executed as w = u.operator+(v);
 }
 

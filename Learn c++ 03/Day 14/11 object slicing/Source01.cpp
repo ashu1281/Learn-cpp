@@ -16,7 +16,13 @@ int main() {
 
 	derived1 = derived2;
 
+	base1 = derived1; // object slicing
 	base1 = derived2; // object slicing
+	base2 = derived1; // object slicing
+	base2 = derived2; // object slicing
 
+	derived1 = base1;
 	derived1 = base2;
+	derived2 = base1;
+	derived2 = base2;
 }

@@ -2,16 +2,20 @@
 #include "Integer.h"
 
 int main() {
-	Integer a = 5;
+	/*Integer a = 5;
 	Integer b = a;
-	assert(a.Get() == b.Get());
+	assert(a.Get() == b.Get());*/
 
 	Integer c(10);
-	b = c;
-	assert(b.Get() == c.Get());
+	Integer d(20);
+	c = d;
+	assert(c.Get() == d.Get());
 }
 
 /*
+* 
+- Constructor only one time called for every object next it not called again for that obj.
+
 - If class contains pointer member then it is strongly recommened to have
   deep copy implementation of copy constructor and copy assignment operator.
 - Note assignment operator has to be implemented as a member function.

@@ -10,7 +10,7 @@ public:
 
 class Rectangle : public Shape {
 public:
-	void Draw() const override {}
+void Draw() const override {}
 };
 
 class Oval : public Shape { // 'Oval' has become an abstract class, because 'Shape::Draw' is not implemented in 'Oval'
@@ -21,7 +21,7 @@ void Draw(Shape* pshape) {
 }
 
 int main() {
-	Shape shape; // Since 'Shape' is an abstract class, it can not be instantiated
+	//Shape shape; // Since 'Shape' is an abstract class, it can not be instantiated
 	Shape* pshape = nullptr; // Pointer of 'Shape' (abstract class) can be defined
 	
 	Triangle t;
@@ -31,8 +31,8 @@ int main() {
 	Rectangle r;
 	Draw(&r);
 
-	Oval o; // Since 'Shape::Draw' is not implemented in 'Oval', it has become an abstract class
-	Draw(&o);
+	//Oval o; // Since 'Shape::Draw' is not implemented in 'Oval', it has become an abstract class
+	//Draw(&o);
 }
 
 /*

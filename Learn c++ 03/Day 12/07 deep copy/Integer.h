@@ -9,7 +9,8 @@ public:
 	int Get() const;
 	void Set(int i);
 public:
-	Integer operator=(const Integer& obj);
+	Integer& operator=(const Integer& obj);//assignment operator
+
 private:
 	int* m_pi;
 };

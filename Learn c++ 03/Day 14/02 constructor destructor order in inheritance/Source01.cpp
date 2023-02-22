@@ -27,7 +27,7 @@ int main() {//it contains 'prolog' code
  
 
 /*
-This program illustrates order of constructor and destructor that
+This program illustrates order of calling constructor and destructor that
 happens between Base and Derived class.
 
 When instantiated object of Derived i.e. 'd', we observed it was constructor
@@ -37,4 +37,6 @@ of 'Base' class that got executed first and then the constructor of 'Derived'.
 
 So at the end of the program, the destructor of 'Derived' was executed first
 and then the destructor of 'Base' clas
+
+eg. of file accesing in derived class which is from base class.
 */

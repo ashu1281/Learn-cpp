@@ -10,7 +10,7 @@ public:
 
 class Derived : public Base {
 public:
-	void f() {
+	void f() override {
 		Base::f();
 		cout << "From Derived::f" << endl;
 	}

@@ -21,8 +21,8 @@ void Integer::Set(int i) {
 	*m_pi = i;
 }
 
-Integer Integer::operator=(const Integer& obj) {
-	if (this != &obj)
+Integer& Integer::operator=(const Integer& obj) {
+	if (this != &obj)//condition do self check if both are same obj? if yes so there is no need to assign valu it already present in it.
 		*m_pi = *obj.m_pi;
 	return *this;
 }
