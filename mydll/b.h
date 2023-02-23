@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef B_EXPORTS
+#if defined(MYDLL_EXPORTS)
 #define EXPIMP _declspec(dllexport)
 
 #else

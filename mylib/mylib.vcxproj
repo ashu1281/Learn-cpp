@@ -18,6 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="b.h" />
+    <ClInclude Include="Circle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="b.cpp" />
+    <ClCompile Include="Circle.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

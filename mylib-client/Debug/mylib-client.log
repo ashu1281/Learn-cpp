@@ -1,1 +1,3 @@
-﻿
+﻿  a.cpp
+D:\pratiti training\Learn c++\mylib-client\a.cpp(10,9): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'double'
+  mylib-client.vcxproj -> D:\pratiti training\Learn c++\Debug\mylib-client.exe

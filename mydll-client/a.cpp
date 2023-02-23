@@ -1,11 +1,14 @@
 #include<cstdio>
 #include"b.h"
+#include"Circle.h"
 
 int main() {
 	int result = 0;
-	result = Add(3, 2);
+	result = Add(1, 2);
 	printf("The result is = %d\n", result);
 	/*printf("value Of PI=%lf", PI);*/
+	Circle u(10);
+	printf("Area = %lf\n", u.GetArea());
 }
 
 

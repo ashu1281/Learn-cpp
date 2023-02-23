@@ -3,7 +3,8 @@
 class Math {
 public:
 	Math() : m_pi(3.14) {
-		// m_pi = 3.14; // this expression is an error because we're trying to assign to const data member
+		//m_pi = 3.14; // this expression is an error because we're trying to assign to const data member
+		//above line gives error bz it is assignment not a initialization.
 	}
 public:
 	double PI() {

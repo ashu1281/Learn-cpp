@@ -1,2 +1,5 @@
 ﻿  a.cpp
-LINK : fatal error LNK1104: cannot open file 'mydll.lib'
+a.obj : error LNK2019: unresolved external symbol "public: __thiscall Circle::Circle(int)" (??0Circle@@QAE@H@Z) referenced in function _main
+a.obj : error LNK2019: unresolved external symbol "public: double __thiscall Circle::GetArea(void)const " (?GetArea@Circle@@QBENXZ) referenced in function _main
+D:\pratiti training\Learn c++\Debug\mydll-client.exe : fatal error LNK1120: 2 unresolved externals
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1096,5): error MSB6006: "link.exe" exited with code 1120.
