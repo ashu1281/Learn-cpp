@@ -15,6 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="dictionary.txt" />
+    <ClCompile Include="q5-root.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -21,9 +21,6 @@
   <ItemGroup>
     <Text Include="dictionary.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Day 16\09 rtti\Source01.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
