@@ -1,2 +1,2 @@
-﻿  q4.cpp
-  day5dll-client.vcxproj -> D:\pratiti training\Learn c++\Debug\day5dll-client.exe
+﻿  q1.cpp
+LINK : fatal error LNK1104: cannot open file 'day5dll.lib'

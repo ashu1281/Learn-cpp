@@ -1,2 +1,6 @@
-﻿  Source01.cpp
+﻿  CPU.cpp
+  Keyboard.cpp
+  Main.cpp
+  Motherboard.cpp
+  Generating Code...
   Learn c++ 03.vcxproj -> D:\pratiti training\Learn c++\Debug\Learn c++ 03.exe

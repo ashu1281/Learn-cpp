@@ -21,6 +21,14 @@
   <ItemGroup>
     <Text Include="dictionary.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Day 13\03 containment\Main.cpp" />
+    <ClCompile Include="Day 13\03 containment\PointCollection.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Day 13\03 containment\Point.h" />
+    <ClInclude Include="Day 13\03 containment\PointCollection.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
