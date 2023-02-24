@@ -11,3 +11,4 @@ Integer operator+(const Integer& lobj, const Integer& robj) {
 	result.Set(lobj.Get() + robj.Get());
 	return result;
 }
+
