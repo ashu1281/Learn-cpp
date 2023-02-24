@@ -1,5 +1,0 @@
-﻿  a.cpp
-D:\pratiti training\Learn c++\mylib-client\a.cpp(10,9): warning C4477: 'printf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'double'
-mylib.lib(b.obj) : warning LNK4099: PDB '' was not found with 'mylib.lib(b.obj)' or at ''; linking object as if no debug info
-mylib.lib(Circle.obj) : warning LNK4099: PDB '' was not found with 'mylib.lib(Circle.obj)' or at ''; linking object as if no debug info
-  mylib-client.vcxproj -> D:\pratiti training\Learn c++\Debug\mylib-client.exe
