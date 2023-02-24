@@ -2,4 +2,4 @@
 
 # c++ training Course
 
-# Notes are in "Learn C++" folder.
+# Notes are in "Learn C++ 03" folder.
