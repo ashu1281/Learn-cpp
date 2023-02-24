@@ -1,2 +1,8 @@
-﻿  Source01.cpp
+﻿  q7-arr_avg.cpp
+D:\pratiti training\Learn c++\Learn c++ 03\Day 17\Exercises\q7-arr_avg.cpp(10,20): warning C4018: '<': signed/unsigned mismatch
+D:\pratiti training\Learn c++\Learn c++ 03\Day 17\Exercises\q7-arr_avg.cpp(22,66): message : see reference to function template instantiation 'T ArrAvg<int>(T [],size_t)' being compiled
+          with
+          [
+              T=int
+          ]
   Learn c++ 03.vcxproj -> D:\pratiti training\Learn c++\Debug\Learn c++ 03.exe

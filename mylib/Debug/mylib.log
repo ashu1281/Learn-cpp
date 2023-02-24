@@ -1,4 +1,5 @@
-﻿  b.cpp
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppClean.targets(77,5): warning : The process cannot access the file 'd:\pratiti training\learn c++\debug\mylib.lib' because it is being used by another process.
+  b.cpp
   Circle.cpp
   Generating Code...
   mylib.vcxproj -> D:\pratiti training\Learn c++\Debug\mylib.lib
