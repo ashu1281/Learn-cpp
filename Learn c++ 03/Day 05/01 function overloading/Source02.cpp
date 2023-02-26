@@ -1,6 +1,15 @@
+
+
+//int f(int a, int b) {
+//
+//}
+//int f(double a, double b) {
+//
+//}
+
 int f() { return 1; }
 
-double f() { return 1.0; }
+double f() { return 1.0; }s
 
 int main() {
 	int a = f();

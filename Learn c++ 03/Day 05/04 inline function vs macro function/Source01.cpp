@@ -15,11 +15,13 @@ int main() {
 /*
 - Macro expansion is done by preprocessor.
 - Inline function expansion is done by compilation phase.
-- If expression such as ++a is passed to macro, then that expression
-  is substituted as it is whereas in case of inline functio,
+
+- {"If expression such as ++a is passed to macro, then that expression
+  is substituted as it is whereas in case of inline function,
   the result of the expression is substituted and not the expression
-  itself.
-- The parameters of macro function doesn't have data types.
+  itself."}
+
+  - The parameters of macro function doesn't have data types.
   Whereas inline function parameters have data type specification.
   So inline functions are more type safe then macros.
 */
