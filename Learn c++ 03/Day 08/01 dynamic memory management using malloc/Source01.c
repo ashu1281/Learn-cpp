@@ -5,7 +5,7 @@ int main() {
 			/*  |-> c style type casting*/	/* static type casting do in cpp*/
 	if (pn != NULL) {
 		*pn = 1;//it's called dereferencing
-		free(pn);//After call dangling pointer is created so assing it to NULL is good practice.
+		free(pn);//After call free fun, dangling pointer is created so assing it to NULL is good practice.
 		pn = NULL;
 	}
 }
