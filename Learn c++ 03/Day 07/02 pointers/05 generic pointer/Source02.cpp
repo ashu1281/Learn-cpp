@@ -5,7 +5,9 @@ int main() {
 	pv = &a;
 	//*pv = 5;// void not store tag thats why it gives error in dereferencing.
 	*static_cast<int*>(pv) = 5; // now it remember int tag
+	//*pv = 5;//not possible
 	pv = &b;
+
 	//*pv = 5.0;
 	*static_cast<double*>(pv) = 5.0;
 }
