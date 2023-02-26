@@ -35,7 +35,7 @@ int main() {
 	(*pa).x = -3;
 	(*pa).y = 7;
 
-	/* accesing struct members using pointer - method 2   use thish method mostly*/
+	/* accesing struct members using pointer - method 2   use this method mostly*/
 	pa->x = 8;
 	pa->y = 2;
 
@@ -58,7 +58,7 @@ int main() {
 - The 'x' and 'y' are called as data members.
 - Preferrably struct is declared globally, so that it is available to
   all functions of that translation unit.
-- Typically structs are declated in header file. And header file is included
+- Typically structs are declared in header file. And header file is included
   at the top of the .cpp file.
 - When variables in an assignment are of same udt then the assignment can be done
   directly between them.
