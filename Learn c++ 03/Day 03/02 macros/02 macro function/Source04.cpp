@@ -5,6 +5,7 @@ void main() {
 	k = MIN(++i, ++j); // k = ++i < ++j ? ++i : ++j;
 }
 
+
 /*
 * Pitfall of macro function.
 * When expression is passed as argument to the the macro function,

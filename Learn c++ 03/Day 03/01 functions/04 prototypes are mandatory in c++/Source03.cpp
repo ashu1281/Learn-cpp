@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int Add(int u, int v); // Function Decaration / Function Prototype
+int Add(int u, int v); // Function Declaration / Function Prototype
 
 void main() {
 	int a = 0;
