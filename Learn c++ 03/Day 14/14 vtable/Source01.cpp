@@ -34,5 +34,5 @@ int main() {
 /*
 - Note _vfptr is per object and vtable is per class.
 - vtable is stored in constant memory.
-- vtable contains addressses of virtual functions only.
+- vtable contains addresses of virtual functions only.
 */
