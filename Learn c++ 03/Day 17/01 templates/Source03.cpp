@@ -1,4 +1,4 @@
-template<class T, class U, class V>
+template<class T, class U, class V> //we can also use "typename" instead of "class"
 void f(T a, U b, V c) {
 
 }
